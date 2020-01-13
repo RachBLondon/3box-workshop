@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-
+import ProfileHover from 'profile-hover';
 
 export default class App extends Component {
 
@@ -71,7 +71,7 @@ class Home extends Component {
     return (
       <div>
         <h2>Welcome to 3Book</h2>
-        {this.props.ethAddress}
+        <ProfileHover address={this.props.ethAddress}/>
       </div>
     )
   }
